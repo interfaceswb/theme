@@ -1,28 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap Template</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100italic,300italic,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="fonts/nueva/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/botones.css">
+  <link rel="stylesheet" type="text/css" href="css/stylo.css">
+  <link rel="stylesheet" type="text/css" href="css/blog-style.css">
+  <!--[if lt IE 9]>
+    <script src="dist/html5shiv.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+</head>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<body>
+
+  <!--Cabecera-->
+  <header class="row">
+    <!--Inicio de navegación-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!--Logo-->
+          <div class="logo">
+            <img class="img-responsive" src="http://placehold.it/50x50" alt="">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+              <?php bloginfo( 'name' ); ?>
+            </a>
+          </div>
+        </div>
+        <!--Fin-navbar-header-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <ul class="nav navbar-nav">
+            <li class="active">
+
+
+            </li>
+
+            <li class="dropdown">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle menu-toggle" data-toggle="dropdown">
+                      Productos <b class="caret"></b>
+                    </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Action</a>
+                  </li>
+                  <li>
+                    <a href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a href="#">Something else here</a>
+                  </li>
+                  <li>
+                    <a href="#">Separated link</a>
+                  </li>
+                  <li>
+                    <a href="#">One more separated link</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li></li>
+          </ul>
+          <form role="search" method="get" class="navbar-form navbar-left" role="search" action="<?php echo home_url( '/' ); ?>">
+            <label>
+              <input type="search" class="form-control" placeholder="Busca un producto …" value="" name="s" title="Search for:" />
+              <input type="hidden" name="post_type" value="product">
+            </label>
+            <input type="submit" class="btn btn-default search-submit" value="Buscar" />
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-shopping-cart blanco"></span> Carrito
+              </a>
+            </li>
+            <li>
+              <a data-toggle="modal" data-target=".bs-example-modal-sm" href="#">Inicia sesión</a>
+            </li>
+            <li>
+              <a data-toggle="modal" data-target="#myModal" href="#">Registrarte</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!--Final de la cabecera-->
+
+
+  <!--Modal Inicio de sesión-->
+  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Iniciar sesión</h4>
+        </div>
+        <div class="modal-body">
+
+          <form class="form" role="form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">Remember me</label>
+            </div>
+
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Iniciar sesión</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin Modal Inicio de sesión-->
+
+  <!--Modal Registro-->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Registrate</h4>
+        </div>
+        <div class="modal-body">
+
+          <form role="form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Repetir Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repetir Password">
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">Check me out</label>
+            </div>
+
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Registrarme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin Modal Registro-->
+
+  <section class="container">
+    <section class=" col-xs-12 col-lg-9">
+      <article class="">
+        <header>
+          <section class="col-xs-11">
+            <img class="img-thumbnail box img-responsive" src="http://placehold.it/1400x350">
+            <h1 class="titulo-articulo"><strong>Título Lorem ipsum dolor sit amet.</strong></h1>
+            <h2>
+              <small>
+                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 
+                Sabado, 25/04/2015 - 
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 
+                César Contreras -
+                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>  
+                15 Comentarios
+              </small>
+            </h2>
+          </section>
+          <aside class="col-xs-1"></aside>
+        </header>
+        <section class="row col-xs-12">
+          <p></p>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illum, doloremque deserunt rerum deleniti sint fuga eos esse iste! Possimus sed repellendus harum dolorum, pariatur ad dolorem delectus, quaerat reiciendis ipsum deleniti ipsa cupiditate fuga sunt perspiciatis alias quisquam debitis commodi.</p>
+        </section>
+
+        <div class="row">
+          <div class="col-xs-12 col-md-offset-9 col-md-3">
+            <button class="btn btn-lg btn-default btn-block" type="default">
+              Más
+            </button>
+          </div>
+        </div>
+
+      </article>
+      <div class="page-header"> </div>
+      <article class="">
+        <img class="img-thumbnail box img-responsive" src="http://placehold.it/1400x350">
+        <h2><strong>Título Lorem ipsum dolor sit amet.</strong></h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illum, doloremque deserunt rerum deleniti sint fuga eos esse iste! Possimus sed repellendus harum dolorum, pariatur ad dolorem delectus, quaerat reiciendis ipsum deleniti ipsa cupiditate fuga sunt perspiciatis alias quisquam debitis commodi, rem tempore asperiores maxime officiis. Mollitia ullam corrupti dignissimos.</p>
+      </article>
+      <article class="">
+        <img class="img-thumbnail box img-responsive" src="http://placehold.it/1400x350">
+        <h2><strong>Título Lorem ipsum dolor sit amet.</strong></h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illum, doloremque deserunt rerum deleniti sint fuga eos esse iste! Possimus sed repellendus harum dolorum, pariatur ad dolorem delectus, quaerat reiciendis ipsum deleniti ipsa cupiditate fuga sunt perspiciatis alias quisquam debitis commodi, rem tempore asperiores maxime officiis. Mollitia ullam corrupti dignissimos.</p>
+      </article>
+    </section>
+    <aside class="well col-xs-12 col-sm-6 col-lg-3"></aside>
+    <aside class="well col-xs-12 col-sm-6 col-lg-3"></aside>
+  </section>
+
+
+  <footer>
+    <!--Landing footer-->
+    <section class="container">
+      <section class="row thumbnails">
+
+        <article class="col-xs-12 col-sm-12 col-md-6 box">
+          <img class="img-thumbnail box img-responsive" src="http://placehold.it/650x150">
+        </article>
+        <article class="col-xs-12 col-sm-6 col-md-6 box">
+          <img class="img-thumbnail box img-responsive" src="http://placehold.it/650x150">
+        </article>
+      </section>
+      <!--Fin de Landing footer-->
+      <section class="row">
+        <!--Esto es una cabecera con fila-->
+        <hr>
+      </section>
+      <section class="row">
+        <article class="col-md-3">
+          <img class="box img-responsive" src="http://placehold.it/350x250">
+        </article>
+        <article class="col-lg-3">
+          <h4>
+                                                              Compra tu
+                                                              <small>Gift Card</small>
+                                                            </h4>
+          <h5>Segundo titulo de mi articulo</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, aspernatur, modi repudiandae iste ipsum.
+          </p>
+          <div class="btn-group boton-agregar">
+            <button type="button" class="btn btn-info">
+              <small>Gift Card</small>
+            </button>
+
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-gift oscuro"></span>
+            </button>
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-credit-card oscuro"></span>
+            </button>
+            <button type="button" class="btn btn-warning">
+              <small>$</small> 100
+            </button>
+          </div>
+        </article>
+        <article class="col-md-3">
+          <img class="box img-responsive" src="http://placehold.it/350x250">
+        </article>
+        <article class="col-md-3">
+          <h4>
+                                                                Zoom
+                                                                <small>Track</small>
+                                                              </h4>
+          <h5>Segundo titulo de mi articulo</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, aspernatur, modi repudiandae iste ipsum.
+          </p>
+          <div class="btn-group boton-agregar">
+            <button type="button" class="btn btn-info">
+              <small>Tracking</small>
+            </button>
+
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-road"></span>
+            </button>
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-barcode"></span>
+            </button>
+            <button type="button" class="btn btn-warning">
+              <span class="glyphicon glyphicon-map-marker"></span>
+            </button>
+          </div>
+        </article>
+
+      </section>
+      <hr>
+      <section class="row">
+        <article class="col-md-5">
+          <h4>
+                                                                <b>Como calculamos tu envio</b>
+                                                              </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, aspernatur, modi repudiandae iste ipsum.Deserunt, aspernatur, modi repudiandae iste ipsum.
+          </p>
+        </article>
+        <div class="col-xs-3 col-md-2">
+          <h5>
+                                                                <b>Servicio al cliente</b>
+                                                              </h5>
+          <p>
+            <a href="#">Envíos a USA, Venezuela y Colombia</a>
+            <br>
+            <a href="#">Servicio de Garantia</a>
+            <br>
+            <a href="#">Contact Info</a>
+            <br>
+            <a href="#">Etc..</a>
+            <br>
+            <a href="#">Etc..</a>
+            <br>
+          </p>
+        </div>
+        <article class="col-md-5">
+          <h4>
+                                                                  <b>Politicas de Reembolso</b>
+                                                                </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, aspernatur, modi repudiandae iste ipsumaspernatur, modi repudiandae iste ipsum.
+          </p>
+        </article>
+      </section>
+      <!-- row refiere a las filas , span a las columnas, seccion a las secciones, article a los articulos, aside a los elementos relacionados-->
+      <hr>
+      </div>
+    </section>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <!--<script src="http://code.jquery.com/jquery.js"></script>
+                                                        cdn-->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/classie.js"></script>
+  <script src="js/uiMorphingButton_inflow.js"></script>
+  <script src="js/uiMorphingButton_fixed.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
 </html>

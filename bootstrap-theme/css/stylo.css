@@ -2,8 +2,24 @@
 
 /* CSS Document */
  @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,100,300);
+
+.btn-primary{
+border-radius: 10px;
+}
+
+.active{
+background-color:cornflowerblue;}
+
+.productoangel{
+	background-color: whitesmoke;
+	height: 210px;
+	width:100%;
+-webkit-box-shadow: -5px 5px 15px 0 #DEDEDE;
+box-shadow: -5px 5px 15px 0 #DEDEDE;
+}
+
  body {
-    background-color: #ffffff;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -13,11 +29,12 @@ h1, h2, h3 {
     font-weight: 300;
 }
 section, header, article {
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 header {
     margin-bottom: 60px;
 }
+
 .navbar, .navbar-default, .navbar-fixed-top {
     background-color: #ffffff;
     opacity: 0.9;
