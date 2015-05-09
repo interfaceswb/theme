@@ -8,3 +8,38 @@ body {
     margin: 0;
     padding: 0;
 }
+.category> div > h4 {
+   margin-top:-30px;
+   margin-bottom: 5px;
+}
+
+.product>article> header{
+  margin-top:-30px;
+  margin-bottom: 0px;
+}
+
+section>header{
+    margin-bottom: 0px;
+}
+
+aside>img{
+  margin-top: 30px;
+}
+
+.category> div> h3 {
+  margin-top: 0;
+}
+.separador {
+  font-size: 27px;
+}
+
+.title-review{
+  font-size: 20px;
+}
+.available {
+  color: green;  
+}
+
+.available-row {
+  margin-top: 30px;
+}
