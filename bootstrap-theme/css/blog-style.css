@@ -1,8 +1,3 @@
-footer
-{
-  background-color: aqua;
-}
-
 section, aside, article, div
 {
     padding: 0px;
@@ -30,12 +25,23 @@ h2, h1
     padding: 0px;
 }
 
+.padding
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h4, h3
+{
+    margin: 0px;
+}
+
 .btn-categoria
 {
     margin-top: 20px;
 }
 
-.articulo
+.articulo, .sidebar
 {
     background-color:aliceblue;
     padding-bottom: 5px;
@@ -73,6 +79,39 @@ h2, h1
 
 }
 
+.categorias
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.nav li 
+{
+    display:table-cell !important;
+}
+
+
+
+.panel-heading
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.img-recientes
+{
+    width: 80px
+}
 
 
 .titulo-articulo 
@@ -92,6 +131,11 @@ h2, h1
     .info-articulo
     {
         font-size: 30px;
+    }
+    
+    .img-recientes
+    {
+        width: 120px
     }
 
 }

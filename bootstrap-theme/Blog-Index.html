@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/stylo.css">
     <link rel="stylesheet" type="text/css" href="css/blog-style.css">
+    <link rel="stylesheet" type="text/css" href="css/calendario.css">
     
     <!--[if lt IE 9]>
         <script src="dist/html5shiv.js"></script>
@@ -182,7 +183,7 @@
     <section class="container-fluid">
       
         <!-- SECCIÓN ARTICULOS-------------------------------------------------->
-        <section class=" col-xs-12 col-lg-9">
+        <section class=" col-xs-12 col-md-8 col-lg-9">
 
             <!-- ARTÍCULO 1------------------------------------------------------>
             <article class="articulo row">
@@ -356,18 +357,41 @@
                     </button>
                 </div>
             </article>  <!-- FIN ARTÍCULO 3---->
-        
+            
+            <!-- PAGINACIÓN -->
+            <nav>
+                <ul class="pagination pagination-lg">
+                    <li class="disabled">
+                        <span>
+                            <span aria-hidden="true">&laquo;</span>
+                        </span>
+                    </li>
+                    <li class="active">
+                        <span>1 <span class="sr-only">(current)</span></span>
+                    </li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- FIN PAGINACIÓN-->
+            
         </section> <!-- FIN SECCIÓN ARTICULOS----->
         
-        <!-- CONTENEDOR ASIDE--> 
-        <aside class="col-xs-12 col-md-3">
-            <!--PERFIL ASIDE -->
-            <aside class="row">
+        <!-- CONTENEDOR ASIDES****************************************************************************************************************************--> 
+        <aside class="col-xs-12 col-md-4 col-lg-3 no-padding">
+            <!--PERFIL ASIDE ************************************************************-->
+            <aside class="col-xs-12 col-sm-6 col-md-12 sidebar no-padding">
                 <header class="header-aside">
                     <div><img class="img-responsive" src="http://placehold.it/1400x600"></div>
                     <div class="img-perfil"><img class="img-responsive img-circle" src="http://placehold.it/200x200"></div>
                 </header>
-                <section>
+                <section class="padding">
                     <h3 class="text-center no-margin"><strong>César Contreras</strong></h3>
                     <h3 class="text-center no-margin"><small>Desarrollador</small></h3>
                     <div class="espacio"></div>
@@ -391,11 +415,287 @@
                         <button type="button" class="btn btn-default"><i class="fa fa-linkedin fa-2x"></i></button>
                     </div>
                 </section>
-            </aside>
-        </aside><!--FIN CONTENEDOR ASIDE--->
+            </aside><!-- FIN PERFIL ASIDE-->
+            
+            <!--FRASE ASIDE ************************************************************-->
+            <aside class="panel col-xs-12 col-sm-6 col-md-12 sidebar no-padding">
+                <section class="panel-body">
+                    <h3>"El poder sin moral es el imperio de la arbitrariedad"</h3>
+                    <h4 class="text-right"><em>Futurama</em></h4>
+                </section>
+            </aside><!-- FIN FRASE ASIDE-->
+               
+            
+            <!-- OTROS ASIDE ************************************************************-->
+            <aside class="col-xs-12 col-sm-6 col-md-12 sidebar no-padding">
+                <!-- ENCABEZADO DE LAS TABS-->
+                <ul class="nav nav-tabs nav-justified">
+                        <li role="presentation" class="active"><a href="#Recientes-tab" aria-controls="Recientes-tab" role="tab" data-toggle="tab">Recientes</a></li>
+                        <li role="presentation"><a href="#Popular-tab" aria-controls="Popular-tab" role="tab" data-toggle="tab">Popular</a></li>
+                        <li role="presentation"><a href="#Comentarios-tab" aria-controls="Comentarios-tab" role="tab" data-toggle="tab">Comentarios</a></li>
+                </ul><!-- FIN ENCABEZADO TABS-->
+                
+                <!-- CUERPO DE LAS TABS-->
+                <section class="tab-content padding">
+                    <div role="tabpanel" class="tab-pane active" id="Recientes-tab">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-recientes" src="http://placehold.it/100x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <h5><i class="fa fa-clock-o"></i> 7:30 pm - <i class="fa fa-calendar"></i> 25/04/2015</h5>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-recientes" src="http://placehold.it/100x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <h5><i class="fa fa-clock-o"></i> 7:30 pm - <i class="fa fa-calendar"></i> 25/04/2015</h5>
+                            </div>
+                        </div>   
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-recientes" src="http://placehold.it/100x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <h5><i class="fa fa-clock-o"></i> 7:30 pm - <i class="fa fa-calendar"></i> 25/04/2015</h5>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-recientes" src="http://placehold.it/100x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <h5><i class="fa fa-clock-o"></i> 7:30 pm - <i class="fa fa-calendar"></i> 25/04/2015</h5>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-recientes" src="http://placehold.it/100x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <h5><i class="fa fa-clock-o"></i> 7:30 pm - <i class="fa fa-calendar"></i> 25/04/2015</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="Popular-tab">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-recientes" src="http://placehold.it/100x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <h5><i class="fa fa-clock-o"></i> 7:30 pm - <i class="fa fa-calendar"></i> 25/04/2015</h5>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-recientes" src="http://placehold.it/100x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <h5><i class="fa fa-clock-o"></i> 7:30 pm - <i class="fa fa-calendar"></i> 25/04/2015</h5>
+                            </div>
+                        </div>   
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-recientes" src="http://placehold.it/100x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <h5><i class="fa fa-clock-o"></i> 7:30 pm - <i class="fa fa-calendar"></i> 25/04/2015</h5>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-recientes" src="http://placehold.it/100x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <h5><i class="fa fa-clock-o"></i> 7:30 pm - <i class="fa fa-calendar"></i> 25/04/2015</h5>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-recientes" src="http://placehold.it/100x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <h5><i class="fa fa-clock-o"></i> 7:30 pm - <i class="fa fa-calendar"></i> 25/04/2015</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="Comentarios-tab">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="http://placehold.it/64x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Ana García</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolores itaque dignissimos aliquam quisquam, sit ad eveniet excepturi libero non!</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="http://placehold.it/64x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Eloise  Chávez</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolores itaque dignissimos aliquam quisquam, sit ad eveniet excepturi libero non!</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="http://placehold.it/64x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Diana Moreno</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolores itaque dignissimos aliquam quisquam, sit ad eveniet excepturi libero non!</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="http://placehold.it/64x64">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">María Vargas</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolores itaque dignissimos aliquam quisquam, sit ad eveniet excepturi libero non!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- FIN CUERPO TABS-->
+            </aside><!--FIN OTROS ASIDE-->
+            
+            
+            <!-- CATEGORÍAS-->
+            <aside class="col-xs-12 col-sm-6 col-md-12 panel panel-default sidebar no-padding categorias ">
+                <div class="panel-heading pasdding"><h2><strong>Categorías</strong></h2></div>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item no-margin row">
+                        <div class="col-xs-10 no-padding"><h3>Desarrollo</h3></div>
+                        <div class="col-xs-2"><i class="fa fa-file-code-o fa-2x"></i></div>
+                    </a>
+                    <a href="#" class="list-group-item no-margin row">
+                        <div class="col-xs-10 no-padding"><h3>Videojuegos</h3></div>
+                        <div class="col-xs-2"><i class="fa fa-gamepad fa-2x"></i></div>
+                    </a>
+                    <a href="#" class="list-group-item no-margin row">
+                        <div class="col-xs-10 no-padding"><h3>Empleo</h3></div>
+                        <div class="col-xs-2"><i class="fa fa-suitcase fa-2x"></i></div>
+                    </a>
+                    <a href="#" class="list-group-item no-margin row">
+                        <div class="col-xs-10 no-padding"><h3>Robótica</h3></div>
+                        <div class="col-xs-2"><i class="fa fa-wrench fa-2x"></i></div>
+                    </a>
+                    <a href="#" class="list-group-item no-margin row">
+                        <div class="col-xs-10 no-padding"><h3>Inteligencia Artificial</h3></div>
+                        <div class="col-xs-2"><i class="fa fa-cogs fa-2x"></i></div>
+                    </a>
+                </div>
+            </aside><!--FIN CATEGORÍAS-->
+            
+            <!-- TAGS-->
+            <aside class="col-xs-12 col-sm-6 col-md-12 panel panel-default sidebar no-padding categorias ">
+                <div class="panel-heading pasdding"><h2><strong>Tags</strong></h2></div>
+
+                <div class="panel-body">
+                    <p class="lead">
+                    <span class="label label-default">Negocio</span>
+                    <span class="label label-default">C#</span>
+                    <span class="label label-default">Java</span>    
+                    <span class="label label-default">Redes Neuronales</span>
+                    <span class="label label-default">Unity</span>
+                    <span class="label label-default">.NET</span>
+                    <span class="label label-default">Modelo MVC</span>
+                    <span class="label label-default">SCRUM</span>
+                    <span class="label label-default">XP</span>
+                    <span class="label label-default">Algoritmos Genéticos</span>
+                    <span class="label label-default">Colonia de Hormigas</span>
+                    </p>
+                </div>
+            </aside><!--FIN TAGS-->
+            
+            <!--<div id="calendar-container">
+            <div id="calendar-header">
+            <span id="calendar-month-year"></span>
+            </div>
+            <div id="calendar-dates">
+            </div>
+            </div>-->
+        </aside><!--FIN CONTENEDOR ASIDES--->
         
     </section> <!-- FIN CONTENEDOR PRINCIPAL ----->
-
+    
+    <footer>
+    <!--Landing footer-->
+        <hr>
+        <section class="row">
+            <article class="col-md-5">
+                <h4><b>Como calculamos tu envio</b></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, aspernatur, modi repudiandae iste ipsum.Deserunt, aspernatur, modi repudiandae iste ipsum.</p>
+            </article>
+            <div class="col-xs-3 col-md-2">
+                <h5><b>Servicio al cliente</b></h5>
+                <p>
+                    <a href="#">Envíos a USA, Venezuela y Colombia</a>
+                    <br>
+                    <a href="#">Servicio de Garantia</a>
+                    <br>
+                    <a href="#">Contact Info</a>
+                    <br>
+                    <a href="#">Etc..</a>
+                    <br>
+                    <a href="#">Etc..</a>
+                    <br>
+                </p>
+            </div>
+            <article class="col-md-5">
+                <h4><b>Politicas de Reembolso</b></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, aspernatur, modi repudiandae iste ipsumaspernatur, modi repudiandae iste ipsum.</p>
+            </article>
+        </section>
+        <!-- row refiere a las filas , span a las columnas, seccion a las secciones, article a los articulos, aside a los elementos relacionados-->
+        <hr>
+        </div>
+    </footer>
+    
+    
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.11.3.min.js"></script>
     <!--<script src="http://code.jquery.com/jquery.js"></script>
@@ -405,6 +705,7 @@
     <script src="js/uiMorphingButton_inflow.js"></script>
     <script src="js/uiMorphingButton_fixed.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/calendario.js"></script>
 
 
 </body>
