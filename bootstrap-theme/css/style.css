@@ -43,3 +43,23 @@ aside>img{
 .available-row {
   margin-top: 30px;
 }
+
+.sylePageContact{
+    color: #8452E5;
+}
+
+.sylePageContact h1, .sylePageContact h2 , .sylePageContact p , .sylePageContact a{
+    color: #8452E5;
+    font-weight: bold;
+}
+
+.sylePageContact button, .sylePageContact active{
+    background: #3B1744;
+}
+
+
+.sylePageContact button:hover, .sylePageContact button:focus{
+    background: #100714;
+    color: #94929A;
+    
+}
