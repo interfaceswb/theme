@@ -1,0 +1,14 @@
+ @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,100,300);
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     font-family: 'Roboto', sans-serif;
+     font-weight: 300;
+     color: lightsteelblue;
+ }
+ 
+ article {
+     background-color: gainsboro;
+ }
