@@ -3,6 +3,43 @@
 /* CSS Document */
  @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,100,300);
 
+.colorsuccess{
+ background-color: #DFF0D8;
+}
+
+.colorinfo{
+ background-color: #D9EDF7;
+}
+
+.colorwarning{
+ background-color: #FCF8E3;
+}
+
+.coloroff{
+ background-color: #CCCCCC;
+}
+
+.color1angel{
+ color: #339DC3;
+}
+
+.color2angel{
+ color: #1087B6;
+}
+
+.color3angel{
+ color: #60707A;
+}
+
+.color4angel{
+ color: #53ABEE;
+}
+
+.color5angel{
+ color: #C0DEED;
+}  
+
+
 .btn-primary{
 border-radius: 10px;
 }
