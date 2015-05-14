@@ -1,210 +1,52 @@
 <!doctype html>
-<html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>dia 7</title>
-
-<head>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100italic,300italic,100' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="fonts/nueva/style.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-
-	<link rel="stylesheet" type="text/css" href="css/stylo.css">
-	<!--[if lt IE 9]>
-  <script src="dist/html5shiv.js"></script>
-  <![endif]-->
-</head>
-
-<body>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    
 	<div class="container">
 		<!--Cabecera-->
 		<header class="row">
-			<!--Inicio de navegación-->
-			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
 
-						<!--Logo-->
-						<div class="logo">
-							<img class="img-responsive" src="http://placehold.it/50x50" alt="">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-								<?php bloginfo( 'name' ); ?>
-							</a>
-						</div>
-
-					</div>
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-						<ul class="nav navbar-nav">
-							<li class="active">
-
-
-							</li>
-
-							<li class="dropdown">
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle menu-toggle" data-toggle="dropdown">
-                      Productos <b class="caret"></b>
-                    </a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="#">Action</a>
-										</li>
-										<li>
-											<a href="#">Another action</a>
-										</li>
-										<li>
-											<a href="#">Something else here</a>
-										</li>
-										<li>
-											<a href="#">Separated link</a>
-										</li>
-										<li>
-											<a href="#">One more separated link</a>
-										</li>
-									</ul>
-								</li>
-
-								<li></li>
-						</ul>
-						<form role="search" method="get" class="navbar-form navbar-left" role="search" action="<?php echo home_url( '/' ); ?>">
-							<label>
-								<input type="search" class="form-control" placeholder="Busca un producto …" value="" name="s" title="Search for:" />
-								<input type="hidden" name="post_type" value="product">
-							</label>
-							<input type="submit" class="btn btn-default search-submit" value="Buscar" />
-						</form>
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="#">
-									<span class="glyphicon glyphicon-shopping-cart blanco"></span> Carrito
-								</a>
-							</li>
-							<li>
-								<a data-toggle="modal" data-target=".bs-example-modal-sm" href="#">Inicia sesión</a>
-							</li>
-							<li>
-								<a data-toggle="modal" data-target="#myModal" href="#">Registrarte</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
 
 		</header>
 		<!--Final de la cabecera-->
 
 
-		<!--Modal Inicio de sesión-->
-		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">Iniciar sesión</h4>
-					</div>
-					<div class="modal-body">
 
-						<form class="form" role="form">
-							<div class="form-group">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputPassword1">Password</label>
-								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-							</div>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox">Remember me</label>
-							</div>
-
-						</form>
-
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn btn-primary">Iniciar sesión</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--Fin Modal Inicio de sesión-->
-
-		<!--Modal Registro-->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">Registrate</h4>
-					</div>
-					<div class="modal-body">
-
-						<form role="form">
-							<div class="form-group">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputPassword1">Password</label>
-								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputPassword1">Repetir Password</label>
-								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repetir Password">
-							</div>
-
-							<div class="checkbox">
-								<label>
-									<input type="checkbox">Check me out</label>
-							</div>
-
-						</form>
-
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn btn-primary">Registrarme</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--Fin Modal Registro-->
 
 
 
 
 
 		<section class="row container">
-			<article class="col-md-12">
-				<img class="img-responsive" src="http://lorempixel.com/1500/400/technics/7/" alt="">
+			<article class="medium-12 columns">
+				<img class="img-responsive" src="http://placehold.it/1500x400" alt="">
 			</article>
 		</section>
 
 		<section class="row container" align="center">
-			<article class=" col-md-3">
+			<article class=" medium-3 columns">
 				<img src="http://placehold.it/154x154" alt="">
 				<h3 class="color1angel" style="font-weight:400;">Title of Content</h3>
 				<p class="color3angel" style="font-size:16px;line-height: 24px">Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
 			</article>
-			<article class=" col-md-3">
+			<article class=" medium-3 columns">
 				<img src="http://placehold.it/154x154" alt="">
 				<h3 class="color1angel" style="font-weight:400;">Title of Content</h3>
 				<p class="color3angel" style="font-size:16px;line-height: 24px">Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
 			</article>
-			<article class=" col-md-3">
+			<article class=" medium-3 columns">
 				<img src="http://placehold.it/154x154" alt="">
 				<h3 class="color1angel" style="font-weight:400;">Title of Content</h3>
 				<p class="color3angel" style="font-size:16px;line-height: 24px">Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
 			</article>
-			<article class=" col-md-3">
+			<article class=" medium-3 columns">
 				<img src="http://placehold.it/154x154" alt="">
 				<h3 class="color1angel" style="font-weight:400;">Title of Content</h3>
 				<p class="color3angel" style="font-size:16px;line-height: 24px">Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
@@ -260,11 +102,11 @@
 	<div class="container">
 
 		<section class="row container">
-			<section class="col-md-12"><h1 class="color2angel" style="font-weight:400;">Secondary Header</h1></section>
+			<section class="medium-12 columns"><h1 class="color2angel" style="font-weight:400;">Secondary Header</h1></section>
 			
 		</section>
 		<section class="row container">
-			<section class="col-md-4">
+			<section class="medium-4 columns">
 				<h2 class="color1angel" style="font-weight:400;">Title of Content</h2>
 				<p class="color3angel" style="font-size:16px;line-height: 24px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo debitis, enim qui nemo harum perspiciatis inventore, facere omnis neque ipsam.</p> <br>
 				<h2 class="color2angel" style="font-weight:400;">Title of Content</h2>
@@ -272,7 +114,7 @@
 				<h2 class="color1angel" style="font-weight:400;">Title of Content</h2>
 				<p class="color3angel" style="font-size:16px;line-height: 24px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo debitis, enim qui nemo harum perspiciatis inventore, facere omnis neque ipsam.</p>
 			</section>
-			<section class="col-md-4">
+			<section class="medium-4 columns">
 				<h2 class="color1angel" style="font-weight:400;">Title of Content</h2>
 				<p class="color3angel" style="font-size:16px;line-height: 24px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo debitis, enim qui nemo harum perspiciatis inventore, facere omnis neque ipsam.</p> <br>
 				<h2 class="color2angel" style="font-weight:400;">Title of Content</h2>
@@ -280,8 +122,8 @@
 				<h2 class="color1angel" style="font-weight:400;">Title of Content</h2>
 				<p class="color3angel" style="font-size:16px;line-height: 24px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo debitis, enim qui nemo harum perspiciatis inventore, facere omnis neque ipsam.</p>
 			</section>
-			<section class="col-md-4">
-				<img src="http://lorempixel.com/300/550/technics/8/" alt="">
+			<section class="medium-4 columns">
+				<img src="http://placehold.it/300x550" alt="">
 			</section>
 		</section>
 
@@ -296,16 +138,16 @@
 			<h1 class="color1angel" style="font-weight:400;">Tertiary Header</h1>
 		</section>
 		<section class="row container" align="center">
-			<section class="col-md-4">
-				<img src="http://lorempixel.com/340/250/sports/8/" alt="">
+			<section class="medium-4 columns">
+				<img src="http://placehold.it/340x250" alt="">
 				<p class="color3angel" style="font-size:16px; line-height: 27px" align="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dicta hic ut suscipit molestias numquam ab unde nulla repellendus incidunt, magnam reiciendis odio, dolorum labore asperiores odit assumenda ex delectus.</p>
 			</section>
-			<section class="col-md-4">
-				<img src="http://lorempixel.com/340/250/sports/2/" alt="">
+			<section class="medium-4 columns">
+				<img src="http://placehold.it/340x250" alt="">
 				<p class="color3angel" style="font-size:16px;  line-height: 27px" align="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dicta hic ut suscipit molestias numquam ab unde nulla repellendus incidunt, magnam reiciendis odio, dolorum labore asperiores odit assumenda ex delectus.</p>
 			</section>
-			<section class="col-md-4">
-				<img src="http://lorempixel.com/340/250/sports/7/" alt="">
+			<section class="medium-4 columns">
+				<img src="http://placehold.it/340x250" alt="">
 				<p class="color3angel" style="font-size:16px; line-height: 27px" align="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dicta hic ut suscipit molestias numquam ab unde nulla repellendus incidunt, magnam reiciendis odio, dolorum labore asperiores odit assumenda ex delectus.</p>
 			</section>
 		</section>
@@ -343,10 +185,10 @@
 			<!--Landing footer-->
 			<section class="row thumbnails">
 
-				<article class="col-xs-12 col-sm-12 col-md-6 box">
+				<article class="small-12 medium-6 columns box">
 					<img class="img-thumbnail box img-responsive" src="http://placehold.it/650x150">
 				</article>
-				<article class="col-xs-12 col-sm-6 col-md-6 box">
+				<article class="small-12 medium-6 columns box">
 					<img class="img-thumbnail box img-responsive" src="http://placehold.it/650x150">
 				</article>
 			</section>
@@ -356,10 +198,10 @@
 				<hr>
 			</section>
 			<section class="row">
-				<article class="col-md-3">
+				<article class="medium-3 columns">
 					<img class="box img-responsive" src="http://placehold.it/350x250">
 				</article>
-				<article class="col-lg-3">
+				<article class="large-3 columns">
 					<h4>Compra tu<small>Gift Card</small></h4>
 
 					<h5>Segundo titulo de mi articulo</h5>
@@ -382,10 +224,10 @@
 						</button>
 					</div>
 				</article>
-				<article class="col-md-3">
+				<article class="medium-3 columns">
 					<img class="box img-responsive" src="http://placehold.it/350x250">
 				</article>
-				<article class="col-md-3">
+				<article class="medium-3 columns">
 					<h4>
                                                                 Zoom
                                                                 <small>Track</small>
@@ -414,7 +256,7 @@
 			</section>
 			<hr>
 			<section class="row">
-				<article class="col-md-5">
+				<article class="medium-5 columns">
 					<h4>
                                                                 <b>Como calculamos tu envio</b>
                                                               </h4>
@@ -422,7 +264,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, aspernatur, modi repudiandae iste ipsum.Deserunt, aspernatur, modi repudiandae iste ipsum.
 					</p>
 				</article>
-				<div class="col-xs-3 col-md-2">
+				<div class="small-3 medium-2 columns">
 					<h5>
                                                                 <b>Servicio al cliente</b>
                                                               </h5>
@@ -439,7 +281,7 @@
 						<br>
 					</p>
 				</div>
-				<article class="col-md-5">
+				<article class="medium-5 columns">
 					<h4>
                                                                   <b>Politicas de Reembolso</b>
                                                                 </h4>
@@ -461,5 +303,5 @@
 	<script src="js/uiMorphingButton_inflow.js"></script>
 	<script src="js/uiMorphingButton_fixed.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
-</body>
+  </body>
+</html>
