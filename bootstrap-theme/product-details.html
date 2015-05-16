@@ -29,86 +29,92 @@
 <body>
   <div class="container">
     <!--Cabecera-->
-    <header class="row">
-      <!--Inicio de navegación-->
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+        <header class="row">
+            <!--Inicio de navegación-->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-            <!--Logo-->
-            <div class="logo">
-              <img class="img-responsive" src="http://placehold.it/50x50" alt="">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                <?php bloginfo( 'name' ); ?>
-              </a>
-            </div>
+                        <!--Logo-->
+                        <div class="logo">
+                            <img class="img-responsive" src="http://placehold.it/50x50" alt="">
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                <?php bloginfo( 'name' ); ?>
+                            </a>
+                        </div>
 
-          </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-            <ul class="nav navbar-nav">
-              <li class="active">
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
 
 
-              </li>
+                            </li>
 
-              <li class="dropdown">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle menu-toggle" data-toggle="dropdown">
+                            <li class="dropdown">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle menu-toggle" data-toggle="dropdown">
                       Productos <b class="caret"></b>
                     </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">Action</a>
-                    </li>
-                    <li>
-                      <a href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a href="#">Something else here</a>
-                    </li>
-                    <li>
-                      <a href="#">Separated link</a>
-                    </li>
-                    <li>
-                      <a href="#">One more separated link</a>
-                    </li>
-                  </ul>
-                </li>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="tienda.html">Tienda</a>
+                                        </li>
+                                        <li>
+                                            <a href="product-details.html">Producto</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Portafolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="Blog-Index.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="precios.html">Precios</a>
+                                        </li>
+                                        <li>
+                                            <a href="Portafolio.html">Portafolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="zourdContact.html">Contacto</a>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                <li></li>
-            </ul>
-            <form role="search" method="get" class="navbar-form navbar-left" role="search" action="<?php echo home_url( '/' ); ?>">
-              <label>
-                <input type="search" class="form-control" placeholder="Busca un producto …" value="" name="s" title="Search for:" />
-                <input type="hidden" name="post_type" value="product">
-              </label>
-              <input type="submit" class="btn btn-default search-submit" value="Buscar" />
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#">
-                  <span class="glyphicon glyphicon-shopping-cart blanco"></span> Carrito
-                </a>
-              </li>
-              <li>
-                <a data-toggle="modal" data-target=".bs-example-modal-sm" href="#">Inicia sesión</a>
-              </li>
-              <li>
-                <a data-toggle="modal" data-target="#myModal" href="#">Registrarte</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                                <li></li>
+                        </ul>
+                        <form role="search" method="get" class="navbar-form navbar-left" role="search" action="<?php echo home_url( '/' ); ?>">
+                            <label>
+                                <input type="search" class="form-control" placeholder="Busca un producto …" value="" name="s" title="Search for:" />
+                                <input type="hidden" name="post_type" value="product">
+                            </label>
+                            <input type="submit" class="btn btn-default search-submit" value="Buscar" />
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-shopping-cart blanco"></span> Carrito
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="modal" data-target=".bs-example-modal-sm" href="#">Inicia sesión</a>
+                            </li>
+                            <li>
+                                <a data-toggle="modal" data-target="#myModal" href="#">Registrarte</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-    </header>
-    <!--Final de la cabecera-->
+        </header>
+        <!--Final de la cabecera-->
     <!--Modal Inicio de sesión-->
     <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
       <div class="modal-dialog">
